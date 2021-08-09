@@ -4,8 +4,8 @@
     </h3>
 
     <div class="list-group list-reset">
-        <a href="#" class="list-group-item list-group-item-action">
-            Dashboard
+        <a *ngFor="let log of logs" href="#" class="list-group-item list-group-item-action">
+            {{log}}
         </a>
     </div>
 
