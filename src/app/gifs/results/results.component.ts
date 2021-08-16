@@ -9,15 +9,14 @@ import { GifsService } from '../services/gifs.service';
 })
 export class ResultsComponent implements OnInit {
 
+  constructor(private gifsService: GifsService) {
+  }
+
   ngOnInit(): void {
   }
 
-  get results () {
+  get results() {
     return this.gifsService.result;
-  }
-
-  constructor(private gifsService: GifsService) {
-
   }
 
 }
